@@ -286,14 +286,46 @@
 
 // // Loops
 
-// for loop keeps running while condition is TRUE
-for (let rep = 1; rep <= 5; rep++) {
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
-  console.log(`loop running in loop ${rep} `);
+// // for loop keeps running while condition is TRUE
+// for (let rep = 1; rep <= 5; rep++) {
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
+//   console.log(`loop running in loop ${rep} `);
 
+// }
+
+// Arrays and Loops
+const skyiearray= [
+    'Skyie',
+    'koltepatil',
+    2037 - 2008,
+    'student',
+    ['fatty', 'skyie', 'shruti']
+];
+    const types = [];
+
+for (let i = 0; i < skyiearray.length; i++) {
+    console.log(skyiearray[i]);
+
+    // Filling types array
+    //types[i] = typeof skyiearray[i];
+    types.push(typeof skyiearray[i]);
+}
+console.log(types);
+
+// Continue and Break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < skyiearray.length; i++) {
+    if (typeof skyiearray[i] !== 'string') continue;
+    console.log(skyiearray[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < skyiearray.length; i++) {
+    if (typeof skyiearray[i] === 'number') break;
+    console.log(skyiearray[i]);
 }
