@@ -99,37 +99,58 @@
 // checkWinner(576, 111);
 // checkWinner(45, 189);   
 
-// Arrays
-const friends = ['bhole', 'fatty', 'skyie'];
-console.log(friends);
-console.log(friends[0]);
-console.log(friends[2]);    
+// // Arrays
+// const friends = ['bhole', 'fatty', 'skyie'];
+// console.log(friends);
+// console.log(friends[0]);
+// console.log(friends[2]);    
 
-const y = new Array(1991, 1984, 2008, );
+// const y = new Array(1991, 1984, 2008, );
 
-console.log(friends[0]);
-console.log(friends[2]);
+// console.log(friends[0]);
+// console.log(friends[2]);
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'skyie';
-console.log(friends);
-const firstName = 'fatty';
-const skyie = [firstName, 'bhole', 2037 - 1991, 'teacher', friends];
-console.log(skyie);
-console.log(skyie.length);
+// friends[2] = 'skyie';
+// console.log(friends);
+// const firstName = 'fatty';
+// const skyie = [firstName, 'bhole', 2037 - 1991, 'teacher', friends];
+// console.log(skyie);
+// console.log(skyie.length);
 
-const calcAge = function (birthYear) {
-  return 2050 - birthYear;
+// const calcAge = function (birthYear) {
+//   return 2050 - birthYear;
   
 
-}
-const ages = [1991, 1984 , 2008, 2020];
+// }
+// const ages = [1991, 1984 , 2008, 2020];
 
-  const age1 = calcAge(ages[0]);
-  const age2 = calcAge(ages[1]);
-  const age3 = calcAge(ages[ages.length - 2]);
-  const age4 = calcAge(ages[3]);
+//   const age1 = calcAge(ages[0]);
+//   const age2 = calcAge(ages[1]);
+//   const age3 = calcAge(ages[ages.length - 2]);
+//   const age4 = calcAge(ages[3]);
 
-  console.log(age1, age2, age3, age4);
+//   console.log(age1, age2, age3, age4);
+
+//Array Methods
+const friends = ['bhole', 'fatty', 'skyie'];
+const newLength = friends.push('shruti');
+
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('shiro');
+console.log(friends);
+friends.pop();
+
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);   
+friends.shift();
+
+console.log(friends);
+console.log(friends.indexOf('skyie'));
+console.log(friends.indexOf('bhole'));
+console.log(friends.includes('skyie'));
