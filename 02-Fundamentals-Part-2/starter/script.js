@@ -81,23 +81,55 @@
 
 // // Coding Challenge #1
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);      
-    } else if (avgKoalas >= 2 * avgDolphins) {  
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log('No one wins...');
-    }   
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);      
+//     } else if (avgKoalas >= 2 * avgDolphins) {  
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+//     } else {
+//         console.log('No one wins...');
+//     }   
+// }
+// checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(576, 111);
+// checkWinner(45, 189);   
+
+// Arrays
+const friends = ['bhole', 'fatty', 'skyie'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[2]);    
+
+const y = new Array(1991, 1984, 2008, );
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'skyie';
+console.log(friends);
+const firstName = 'fatty';
+const skyie = [firstName, 'bhole', 2037 - 1991, 'teacher', friends];
+console.log(skyie);
+console.log(skyie.length);
+
+const calcAge = function (birthYear) {
+  return 2050 - birthYear;
+  
+
 }
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(576, 111);
-checkWinner(45, 189);   
+const ages = [1991, 1984 , 2008, 2020];
 
+  const age1 = calcAge(ages[0]);
+  const age2 = calcAge(ages[1]);
+  const age3 = calcAge(ages[ages.length - 2]);
+  const age4 = calcAge(ages[3]);
 
-
+  console.log(age1, age2, age3, age4);
