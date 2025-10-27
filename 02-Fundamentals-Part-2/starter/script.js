@@ -330,24 +330,39 @@
 //     console.log(skyiearray[i]);
 // }
 
-// Looping Backwards and Loops in Loops
-const skyiearray= [
-    'Skyie',
-    'koltepatil',
-    2037 - 2008,
-    'student',
-    ['fatty', 'skyie', 'shruti']
-    //0, 1, 2, 3, 4
-    //4, 3, 2, 1, 0
-];
-for (let i = skyiearray.length - 1; i >= 0; i--) {
-    console.log(i, skyiearray[i]);
+// // Looping Backwards and Loops in Loops
+// const skyiearray= [
+//     'Skyie',
+//     'koltepatil',
+//     2037 - 2008,
+//     'student',
+//     ['fatty', 'skyie', 'shruti']
+//     //0, 1, 2, 3, 4
+//     //4, 3, 2, 1, 0
+// ];
+// for (let i = skyiearray.length - 1; i >= 0; i--) {
+//     console.log(i, skyiearray[i]);
 
+// }
+// for (let car = 1; car < 8; car++) {
+//     console.log(`--- Starting car ---${car} ---`);
+
+//     for (let rep = 1; rep < 8; rep++) {
+//         console.log(`car ${car}: car speed ${rep}km/h`);
+//     }  
+// }
+
+// The While Loop
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`Mango Juice${rep} `);rep++;
 }
-for (let car = 1; car < 8; car++) {
-    console.log(`--- Starting car ---${car} ---`);
 
-    for (let rep = 1; rep < 8; rep++) {
-        console.log(`car ${car}: car speed ${rep}km/h`);
-    }  
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('No more Dice to roll...');
 }
