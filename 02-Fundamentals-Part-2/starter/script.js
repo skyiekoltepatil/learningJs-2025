@@ -298,34 +298,56 @@
 
 // }
 
-// Arrays and Loops
+// // Arrays and Loops
+// const skyiearray= [
+//     'Skyie',
+//     'koltepatil',
+//     2037 - 2008,
+//     'student',
+//     ['fatty', 'skyie', 'shruti']
+// ];
+//     const types = [];
+
+// for (let i = 0; i < skyiearray.length; i++) {
+//     console.log(skyiearray[i]);
+
+//     // Filling types array
+//     //types[i] = typeof skyiearray[i];
+//     types.push(typeof skyiearray[i]);
+// }
+// console.log(types);
+
+// // Continue and Break
+// console.log('--- ONLY STRINGS ---');
+// for (let i = 0; i < skyiearray.length; i++) {
+//     if (typeof skyiearray[i] !== 'string') continue;
+//     console.log(skyiearray[i]);
+// }
+
+// console.log('--- BREAK WITH NUMBER ---');
+// for (let i = 0; i < skyiearray.length; i++) {
+//     if (typeof skyiearray[i] === 'number') break;
+//     console.log(skyiearray[i]);
+// }
+
+// Looping Backwards and Loops in Loops
 const skyiearray= [
     'Skyie',
     'koltepatil',
     2037 - 2008,
     'student',
     ['fatty', 'skyie', 'shruti']
+    //0, 1, 2, 3, 4
+    //4, 3, 2, 1, 0
 ];
-    const types = [];
+for (let i = skyiearray.length - 1; i >= 0; i--) {
+    console.log(i, skyiearray[i]);
 
-for (let i = 0; i < skyiearray.length; i++) {
-    console.log(skyiearray[i]);
-
-    // Filling types array
-    //types[i] = typeof skyiearray[i];
-    types.push(typeof skyiearray[i]);
 }
-console.log(types);
+for (let car = 1; car < 8; car++) {
+    console.log(`--- Starting car ---${car} ---`);
 
-// Continue and Break
-console.log('--- ONLY STRINGS ---');
-for (let i = 0; i < skyiearray.length; i++) {
-    if (typeof skyiearray[i] !== 'string') continue;
-    console.log(skyiearray[i]);
-}
-
-console.log('--- BREAK WITH NUMBER ---');
-for (let i = 0; i < skyiearray.length; i++) {
-    if (typeof skyiearray[i] === 'number') break;
-    console.log(skyiearray[i]);
+    for (let rep = 1; rep < 8; rep++) {
+        console.log(`car ${car}: car speed ${rep}km/h`);
+    }  
 }
