@@ -188,37 +188,60 @@
 //     'student',
 //     ['fatty', 'skyie', 'shruti']
 // ];
- // Dot Array Notation
+//  // Dot Array Notation
+// const skyie = {
+//   firstName: 'Skyie',   
+//     lastName: 'koltepatil',
+//     age: 2037 - 2008,   
+//     job: 'student',
+//     friends: ['bhole', 'fatty',]
+// };
+// console.log(skyie);
+
+// console.log(skyie.lastName);
+// console.log(skyie['lastName']); // Bracket Notation use for to modify property later on 
+
+// const nameKey = 'Name';
+// console.log(skyie['first' + nameKey]);
+// console.log(skyie['last' + nameKey]);
+
+// // console.log(skyie.'last' + nameKey); // Dot Notation will not work in this case
+// const interestedIn = prompt('What do you want to know about Skyie? Choose between firstName, lastName, age, job, and friends');
+// console.log(skyie[interestedIn]);
+// console.log(skyie.interestedIn); // Dot Notation will not work in this case
+// if (skyie[interestedIn]) {  
+//     console.log(skyie[interestedIn]);
+// }  
+// else {      
+//     console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+// }       
+// skyie.location = 'India';   
+// skyie['twitter'] = '@skyiekoltepatil';
+// console.log(skyie);
+
+// // Challenge
+// // "Skyie has 2 friends, and his best friend is called fatty"
+// console.log(`${skyie.firstName} has ${skyie.friends.length} friends, and his best friend is called ${skyie.friends[0]}`);
+
+// // Object Methods
 const skyie = {
-  firstName: 'Skyie',   
-    lastName: 'koltepatil',
-    age: 2037 - 2008,   
-    job: 'student',
-    friends: ['bhole', 'fatty',]
-};
-console.log(skyie);
+  firstName: 'Skyie',       
+    lastName: 'koltepatil', 
+    birthYear: 2008,
+    job: 'student', 
+    friends: ['bhole', 'fatty', 'shruti'],
+    hasDriversLicense: true,
 
-console.log(skyie.lastName);
-console.log(skyie['lastName']); // Bracket Notation use for to modify property later on 
 
-const nameKey = 'Name';
-console.log(skyie['first' + nameKey]);
-console.log(skyie['last' + nameKey]);
+    calcAge: function () {  
+        this.age = 2025 - this.birthYear;
+        return this.age;
 
-// console.log(skyie.'last' + nameKey); // Dot Notation will not work in this case
-const interestedIn = prompt('What do you want to know about Skyie? Choose between firstName, lastName, age, job, and friends');
-console.log(skyie[interestedIn]);
-console.log(skyie.interestedIn); // Dot Notation will not work in this case
-if (skyie[interestedIn]) {  
-    console.log(skyie[interestedIn]);
-}  
-else {      
-    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
-}       
-skyie.location = 'India';   
-skyie['twitter'] = '@skyiekoltepatil';
-console.log(skyie);
-
-// Challenge
-// "Skyie has 2 friends, and his best friend is called fatty"
-console.log(`${skyie.firstName} has ${skyie.friends.length} friends, and his best friend is called ${skyie.friends[0]}`);
+    },
+    getSummary: function () { 
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;    
+    }                                                                                                                                                                                                           
+};      
+console.log(skyie.calcAge());
+console.log(skyie.age);
+console.log(skyie.getSummary());
