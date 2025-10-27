@@ -248,38 +248,52 @@
 
 // // Coding Challenge #3
 //  objects for skyie and bhole
-const skyie = {
-  fullName: "skyie",
-  mass: 90, // in kg
-  height: 1.60, // in meters
+// const skyie = {
+//   fullName: "skyie",
+//   mass: 90, // in kg
+//   height: 1.60, // in meters
 
-  //  Calc BMI method
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height ** 2);
-    return this.bmi;
-  }
-};
+//   //  Calc BMI method
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height ** 2);
+//     return this.bmi;
+//   }
+// };
 
-const bhole = {
-  fullName: "bhole",
-  mass: 156,
-  height: 1.95,
+// const bhole = {
+//   fullName: "bhole",
+//   mass: 156,
+//   height: 1.95,
 
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height ** 2);
-    return this.bmi;
-  }
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height ** 2);
+//     return this.bmi;
+//   }
+// };
 
-//  Methods To Calculate BMI
-skyie.calcBMI();
-bhole.calcBMI();
+// //  Methods To Calculate BMI
+// skyie.calcBMI();
+// bhole.calcBMI();
 
-// Compare Who Has The Higher BMI
-if (skyie.bmi > bhole.bmi) {
-  console.log(`${skyie.fullName}'s BMI is (${skyie.bmi.toFixed(1)}) & higher than ${bhole.fullName}'s (${bhole.bmi.toFixed(1)})!`);
-} else if (bhole.bmi > skyie.bmi) {
-  console.log(`${bhole.fullName}'s BMI is (${bhole.bmi.toFixed(2)}) & higher than ${skyie.fullName}'s (${skyie.bmi.toFixed(2)})!`);
-} else {
-  console.log(`${skyie.fullName} and ${bhole.fullName} have the same BMI (${skyie.bmi.toFixed(1)})!`);
+// // Compare Who Has The Higher BMI
+// if (skyie.bmi > bhole.bmi) {
+//   console.log(`${skyie.fullName}'s BMI is (${skyie.bmi.toFixed(1)}) & higher than ${bhole.fullName}'s (${bhole.bmi.toFixed(1)})!`);
+// } else if (bhole.bmi > skyie.bmi) {
+//   console.log(`${bhole.fullName}'s BMI is (${bhole.bmi.toFixed(2)}) & higher than ${skyie.fullName}'s (${skyie.bmi.toFixed(2)})!`);
+// } else {
+//   console.log(`${skyie.fullName} and ${bhole.fullName} have the same BMI (${skyie.bmi.toFixed(1)})!`);
+// }
+
+// // Loops
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 5; rep++) {
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+  console.log(`loop running in loop ${rep} `);
+
 }
