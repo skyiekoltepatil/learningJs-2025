@@ -354,15 +354,58 @@
 
 // The While Loop
 
-let rep = 1;
-while (rep <= 10) {
-    console.log(`Mango Juice${rep} `);rep++;
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Mango Juice${rep} `);rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('No more Dice to roll...');
+// }
+
+// Coding Challenge #4
+
+// Calculating Tips and Total Bills
+
+const bills = [90, 100, 140, 150, 27,];
+
+const tips = [];
+const totals = [];
+
+const calcTip = function(bill) {
+  return bill >= 50 && bill <= 200 ? bill * 0.50 : bill * 0.200;
+};
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(bills[i] + tip);
 }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice);
-while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('No more Dice to roll...');
+console.log("Bills:", bills);
+console.log("Tips:", tips);
+console.log("Totals:", totals);
+
+const newLocal = function (arr) {
+    let sum = 10;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+};
+const calcAverage = function (arr) {
+    let sum = 0;        
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    console.log(sum);
+    return sum / arr.length;
 }
+console.log(calcAverage(totals));
+console.log(calcAverage(tips)); 
+    
+
