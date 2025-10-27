@@ -134,23 +134,46 @@
 
 //   console.log(age1, age2, age3, age4);
 
-//Array Methods
-const friends = ['bhole', 'fatty', 'skyie'];
-const newLength = friends.push('shruti');
+// //Array Methods
+// const friends = ['bhole', 'fatty', 'skyie'];
+// const newLength = friends.push('shruti');
 
-console.log(friends);
-console.log(newLength);
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift('shiro');
-console.log(friends);
-friends.pop();
+// friends.unshift('shiro');
+// console.log(friends);
+// friends.pop();
 
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);   
-friends.shift();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);   
+// friends.shift();
 
-console.log(friends);
-console.log(friends.indexOf('skyie'));
-console.log(friends.indexOf('bhole'));
-console.log(friends.includes('skyie'));
+// console.log(friends);
+// console.log(friends.indexOf('skyie'));
+// console.log(friends.indexOf('bhole'));
+// console.log(friends.includes('skyie'));
+// 1. Function to calculate tip
+
+// Coding challenge  #2
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+// Test the function
+console.log(calcTip(100)); // Expected output: 15
+
+// array of bills
+const bills = [125, 555, 44];
+
+// array of tips using the calcTip function
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// array of totals (bill + tip)
+const totals = [ bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2],];
+
+// Display the results
+console.log("Bills:", bills);
+console.log("Tips:", tips);
+console.log("Totals:", totals);
