@@ -156,24 +156,42 @@
 // console.log(friends.includes('skyie'));
 // 1. Function to calculate tip
 
-// Coding challenge  #2
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// // Coding challenge  #2
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// // Test the function
+// console.log(calcTip(100)); // Expected output: 15
+
+// // array of bills
+// const bills = [125, 555, 44];
+
+// // array of tips using the calcTip function
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// // array of totals (bill + tip)
+// const totals = [ bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2],];
+
+// // Display the results
+// console.log("Bills:", bills);
+// console.log("Tips:", tips);
+// console.log("Totals:", totals);
+
+/// // Objects
+
+const skyiearray= [
+    'Skyie',
+    'koltepatil',
+    2037 - 2008,
+    'student',
+    ['fatty', 'skyie', 'shruti']
+];
+
+const skyie = {
+  firstName: 'Skyie',   
+    lastName: 'koltepatil',
+    age: 2037 - 2008,   
+    job: 'student',
+    friends: ['bhole', 'fatty',]
 };
-
-// Test the function
-console.log(calcTip(100)); // Expected output: 15
-
-// array of bills
-const bills = [125, 555, 44];
-
-// array of tips using the calcTip function
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-
-// array of totals (bill + tip)
-const totals = [ bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2],];
-
-// Display the results
-console.log("Bills:", bills);
-console.log("Tips:", tips);
-console.log("Totals:", totals);
