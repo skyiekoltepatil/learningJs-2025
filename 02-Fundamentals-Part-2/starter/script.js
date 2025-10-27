@@ -223,25 +223,63 @@
 // // "Skyie has 2 friends, and his best friend is called fatty"
 // console.log(`${skyie.firstName} has ${skyie.friends.length} friends, and his best friend is called ${skyie.friends[0]}`);
 
-// // Object Methods
+// // // Object Methods
+// const skyie = {
+//   firstName: 'Skyie',       
+//     lastName: 'koltepatil', 
+//     birthYear: 2008,
+//     job: 'student', 
+//     friends: ['bhole', 'fatty', 'shruti'],
+//     hasDriversLicense: true,
+
+
+//     calcAge: function () {  
+//         this.age = 2025 - this.birthYear;
+//         return this.age;
+
+//     },
+//     getSummary: function () { 
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;    
+//     }                                                                                                                                                                                                           
+// };      
+// console.log(skyie.calcAge());
+// console.log(skyie.age);
+// console.log(skyie.getSummary());
+
+// // Coding Challenge #3
+//  objects for skyie and bhole
 const skyie = {
-  firstName: 'Skyie',       
-    lastName: 'koltepatil', 
-    birthYear: 2008,
-    job: 'student', 
-    friends: ['bhole', 'fatty', 'shruti'],
-    hasDriversLicense: true,
+  fullName: "skyie",
+  mass: 90, // in kg
+  height: 1.60, // in meters
 
+  //  Calc BMI method
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+};
 
-    calcAge: function () {  
-        this.age = 2025 - this.birthYear;
-        return this.age;
+const bhole = {
+  fullName: "bhole",
+  mass: 156,
+  height: 1.95,
 
-    },
-    getSummary: function () { 
-        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;    
-    }                                                                                                                                                                                                           
-};      
-console.log(skyie.calcAge());
-console.log(skyie.age);
-console.log(skyie.getSummary());
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+};
+
+//  Methods To Calculate BMI
+skyie.calcBMI();
+bhole.calcBMI();
+
+// Compare Who Has The Higher BMI
+if (skyie.bmi > bhole.bmi) {
+  console.log(`${skyie.fullName}'s BMI is (${skyie.bmi.toFixed(1)}) & higher than ${bhole.fullName}'s (${bhole.bmi.toFixed(1)})!`);
+} else if (bhole.bmi > skyie.bmi) {
+  console.log(`${bhole.fullName}'s BMI is (${bhole.bmi.toFixed(2)}) & higher than ${skyie.fullName}'s (${skyie.bmi.toFixed(2)})!`);
+} else {
+  console.log(`${skyie.fullName} and ${bhole.fullName} have the same BMI (${skyie.bmi.toFixed(1)})!`);
+}
