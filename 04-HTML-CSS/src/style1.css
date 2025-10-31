@@ -1,0 +1,66 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(216, 241, 241);
+  font-family: Arial;
+  font-size: 20px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.first {
+  color: rgb(0, 0, 0);
+}
+a {
+  background-color: rgb(161, 183, 224);
+}
+
+#your-name {
+  background-color: rgba(173, 236, 238, 0.87);
+  border: 5px solid #ff00aa71;
+  width: 400px;
+  padding: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+
+#Img  {
+  width: 20%;
+  align-items: baseline;
+}
+
+#your-name h2 {
+  color: rgb(220, 233, 230);
+}
+.first  {
+    font-size: 20px;
+
+}
